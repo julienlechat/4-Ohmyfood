@@ -75,7 +75,59 @@ header > h1 {
 /* SECTION FONCTIONNEMENT */
 .s-fonctionnement {
   margin: 47px 15px;
+  height: 347px;
 }
 .info-fonctionnement {
-  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+}
+.fonctionnement {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  padding: 17px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  background-color: #f6f6f6;
+  box-shadow: 2px 5px 8px #e6e6e6;
+}
+.fonctionnement:nth-child(0n + 3) {
+  background-color: #f5edff;
+}
+.fonctionnement > span:nth-child(0n + 3) {
+  font-size: 16px;
+  font-weight: 500;
+}
+.fonctionnement > i {
+  color: #7e7e7e;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+.fonctionnement:nth-child(0n + 1) > i {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.fonctionnement:nth-child(0n + 2) > i {
+  font-size: 17px;
+}
+.fonctionnement:nth-child(0n + 3) > i {
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: #9356dc;
+}
+.fonctionnement > span:nth-child(0n + 1) {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: -15px;
+  height: 15px;
+  width: 15px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #9356dc;
 }
