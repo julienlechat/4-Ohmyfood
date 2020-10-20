@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Roboto", "Sans serif";
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  height: 63px;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 0 0 5px gray;
+}
+header > h1 {
+  font-family: "Shrikhand", "Sans serif";
+}
+
+/* SECTION INTRODUCTION */
+.s-introduction {
+  display: flex;
+  flex-direction: column;
+}
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  color: #353535;
+  height: 50px;
+  column-gap: 18px;
+}
+.localisation > span {
+  font-weight: 500;
+  font-size: 15px;
+}
+.presentation {
+  background-color: #f6f6f6;
+  height: 191px;
+  padding: 38px 39px;
+  padding-bottom: 58px;
+  text-align: center;
+}
+.presentation > h1 {
+  font-size: 24px;
+  margin: auto 26px;
+  line-height: 1.19;
+}
+.presentation > p {
+  color: #4d4d4d;
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 44px;
+}
+.presentation > a {
+  padding: 15px 20px;
+  border-radius: 35px;
+  font-weight: 400;
+  color: #fff;
+  background: linear-gradient(#ff79da, #9356dc);
+}
