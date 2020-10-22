@@ -121,6 +121,7 @@
 }
 .restaurant {
   display: flex;
+  position: relative;
   height: 255px;
   flex-direction: column;
   border-radius: 15px;
@@ -185,4 +186,15 @@
   transform: scale(1);
   opacity: 1;
   -webkit-text-stroke: initial;
+}
+.restaurant-new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 15px;
+  border-radius: 4px;
+  background-color: #99e2d0;
+  color: #008766;
 }
