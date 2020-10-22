@@ -42,11 +42,12 @@ footer {
   padding: 25px 30px;
   padding-bottom: 35px;
 }
-footer > span {
-  padding-bottom: 10px;
-  font-size: 19px;
-  font-weight: 500;
-  font-family: "Shrikhand", "Sans serif";
+.logo {
+  display: flex;
+  padding-bottom: 15px;
+}
+.logo > img {
+  height: 17px;
 }
 .footer-with-icon {
   display: flex;
