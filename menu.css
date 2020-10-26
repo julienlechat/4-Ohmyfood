@@ -1,23 +1,25 @@
-/* SECTION MENU */
-.s-menu > img {
+/* IMAGE PRESENTATION */
+.presentation {
   width: 100%;
 }
-.menu {
+
+/* SECTION MENU */
+.s-menu {
   position: relative;
-  margin-top: -80px;
+  margin-top: -70px;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0 0;
   padding: 30px 10px;
 }
 
 /* TITRE */
-.titre {
+.general-titre {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px 25px 10px;
+  padding: 0 25px 15px 10px;
 }
-.titre > span {
+.general-titre > span {
   font-size: 28px;
   font-weight: 500;
   font-family: "Shrikhand", "Sans serif";
@@ -26,17 +28,25 @@
   color: #f6f6f6;
   font-size: 23px;
 }
-/* ENTREES */
+
+/* TITRE MENU */
 .cat-menu {
   padding: 15px 0;
   display: flex;
   flex-direction: column;
+  animation: 1.5s apparition;
 }
 .cat-menu > h2 {
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
   padding-left: 2px;
+}
+.trait {
+  margin: 5px 0;
+  height: 3px;
+  width: 45px;
+  background-color: #99e2d0;
 }
 .souscat-menu {
   display: flex;
@@ -48,26 +58,23 @@
   box-shadow: 5px 5px 10px #d4d4d4;
   border-radius: 15px;
   overflow: hidden;
+  animation: apparition-menu 7s ease-in-out;
 }
-.trait {
-  margin: 5px 0;
-  height: 3px;
-  width: 45px;
-  background-color: #99e2d0;
-}
-.entrees {
+
+/* BLOC MENU */
+.menu {
   flex: 1;
   min-width: 0;
   position: relative;
   padding: 12px 10px;
   text-overflow: ellipsis;
 }
-.entrees > h3 {
+.menu > h3 {
   padding-bottom: 5px;
   font-size: 18px;
   font-weight: 500;
 }
-.entrees-desc {
+.menu-desc {
   font-size: 15px;
   font-weight: 300;
   text-overflow: ellipsis;
@@ -77,7 +84,7 @@
 .desc-nowrap {
   white-space: initial;
 }
-.entrees-prix {
+.menu-prix {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -88,6 +95,14 @@
   height: 100%;
   right: -20;
   bottom: 10;
+}
+
+/* BOUTON VALIDE */
+.button-espacement {
+  display: flex;
+  height: 1px;
+  width: 40px;
+  transition: width 0.5s;
 }
 .button-valid {
   display: flex;
@@ -103,25 +118,94 @@
   color: #fff;
   transition: width 0.5s;
 }
-.valid-nowrap {
-}
-.button-espacement {
+
+/* BOUTON COMMANDER */
+.button-commander {
   display: flex;
-  height: 1px;
-  width: 40px;
-  transition: width 0.5s;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
 }
+.button-commander > a {
+  padding: 15px 50px;
+  border-radius: 35px;
+  color: #fff;
+  box-shadow: 2px 5px 5px lightgray;
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  transition: box-shadow 0.2s;
+}
+.button-commander > a:hover {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  filter: alpha(opacity=0.8);
+  box-shadow: 2px 5px 5px gray;
+}
+
+/* ANIMATION */
 .souscat-menu:hover .button-espacement {
   width: 100px;
-}
-.souscat-menu:hover .button-valid > i {
-  animation: 0.5s rotate-valid-button;
 }
 .souscat-menu:hover .button-valid {
   width: 60px;
 }
+.souscat-menu:hover .button-valid > i {
+  animation: 0.5s rotate-valid-button;
+}
+.cat-menu:nth-child(2) {
+  animation-delay: -0.8s;
+}
+.cat-menu:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+.cat-menu:nth-of-type(2) > .souscat-menu:nth-child(3),
+.cat-menu:nth-of-type(3) > .souscat-menu:nth-child(3),
+.cat-menu:nth-of-type(4) > .souscat-menu:nth-child(3) {
+  animation-delay: -4s;
+}
+.cat-menu:nth-of-type(2) > .souscat-menu:nth-child(4),
+.cat-menu:nth-of-type(3) > .souscat-menu:nth-child(4),
+.cat-menu:nth-of-type(4) > .souscat-menu:nth-child(4) {
+  animation-delay: -3.6s;
+}
+.cat-menu:nth-of-type(2) > .souscat-menu:nth-child(5),
+.cat-menu:nth-of-type(3) > .souscat-menu:nth-child(5),
+.cat-menu:nth-of-type(4) > .souscat-menu:nth-child(5) {
+  animation-delay: -3.2s;
+}
+.cat-menu:nth-of-type(2) > .souscat-menu:nth-child(6),
+.cat-menu:nth-of-type(3) > .souscat-menu:nth-child(6),
+.cat-menu:nth-of-type(4) > .souscat-menu:nth-child(6) {
+  animation-delay: -2.8s;
+}
+.cat-menu:nth-of-type(2) > .souscat-menu:nth-child(7),
+.cat-menu:nth-of-type(3) > .souscat-menu:nth-child(7),
+.cat-menu:nth-of-type(4) > .souscat-menu:nth-child(7) {
+  animation-delay: -2.4s;
+}
+
 @keyframes rotate-valid-button {
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes apparition {
+  0% {
+    margin-top: 500px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes apparition-menu {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
