@@ -1,0 +1,99 @@
+/* SECTION MENU */
+.s-menu > img {
+  width: 100%;
+}
+.menu {
+  position: relative;
+  margin-top: -80px;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+  padding: 30px 10px;
+}
+
+/* TITRE */
+.titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 25px 10px;
+}
+.titre > span {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Shrikhand", "Sans serif";
+}
+.coeur {
+  color: #f6f6f6;
+  font-size: 23px;
+}
+/* ENTREES */
+.cat-entrees {
+  display: flex;
+  flex-direction: column;
+}
+.cat-entrees > h2 {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-left: 2px;
+}
+
+.souscat-entrees {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #d4d4d4;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.trait {
+  margin: 5px 0;
+  height: 3px;
+  width: 45px;
+  background-color: #99e2d0;
+}
+.entrees {
+  flex: 1;
+  position: relative;
+  padding: 12px 10px;
+}
+.entrees > h3 {
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.entrees-desc {
+  font-size: 14px;
+  font-weight: 300;
+}
+.entrees-prix {
+  position: absolute;
+  color: #353535;
+  font-size: 15px;
+  font-weight: 600;
+  right: 25px;
+}
+.button-valid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  background-color: #99e2d0;
+  height: 70px;
+  width: 0;
+  color: #fff;
+  transition: width 0.5s;
+}
+.souscat-entrees:hover .button-valid > i {
+  animation: 0.5s rotate-valid-button;
+}
+.souscat-entrees:hover .button-valid {
+  width: 60px;
+}
+@keyframes rotate-valid-button {
+  100% {
+    transform: rotate(360deg);
+  }
+}

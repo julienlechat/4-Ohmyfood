@@ -74,3 +74,27 @@ footer {
 .footer-icon2 {
   font-size: 11px;
 }
+/* COEUR */
+.coeur {
+  position: relative;
+  font-size: 21px;
+  cursor: pointer;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+.coeur2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.2s ease-in;
+}
+.coeur:hover .coeur2 {
+  transform: scale(1);
+  opacity: 1;
+  -webkit-text-stroke: initial;
+}
