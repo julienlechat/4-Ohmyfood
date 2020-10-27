@@ -303,7 +303,7 @@
 @media (min-width: 900px) {
   .s-introduction {
     margin: auto;
-    border-radius: 0 0 25px 25px;
+    border-radius: 25px;
     overflow: hidden;
   }
   .info-fonctionnement {

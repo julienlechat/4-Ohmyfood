@@ -8,6 +8,7 @@
 /* SECTION MENU */
 .s-menu {
   position: relative;
+  max-width: 900px;
   margin-top: -70px;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0 0;
@@ -226,9 +227,10 @@
     height: 700px;
   }
   .general-titre {
-    max-width: ;
+    max-width: 900px;
   }
   .s-menu {
-    border-radius: 0;
+    margin: 30px auto;
+    border-radius: 25px;
   }
 }
