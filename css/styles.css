@@ -2,6 +2,7 @@
 .s-introduction {
   display: flex;
   flex-direction: column;
+  max-width: 900px;
 }
 /* LOCALISATION */
 .localisation {
@@ -58,6 +59,7 @@
 .s-fonctionnement {
   margin: 47px 15px;
   height: 347px;
+  max-width: 900px;
 }
 .info-fonctionnement {
   display: flex;
@@ -118,6 +120,7 @@
 .s-restaurants {
   background-color: #f2f2f2;
   padding: 53px 20px;
+  max-width: 900px;
 }
 .s-restaurants > h2 {
   margin-bottom: 22px;
@@ -298,10 +301,22 @@
   }
 }
 @media (min-width: 900px) {
+  .s-introduction {
+    margin: auto;
+    border-radius: 0 0 25px 25px;
+    overflow: hidden;
+  }
   .info-fonctionnement {
     align-items: center;
   }
+  .s-fonctionnement {
+    margin: 47px auto;
+  }
   .fonctionnement {
     width: 790px;
+  }
+  .s-restaurants {
+    margin: 20px auto;
+    border-radius: 25px;
   }
 }
