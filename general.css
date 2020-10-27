@@ -1,0 +1,96 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  font-family: "Roboto", "Sans serif";
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-top: 15px;
+  z-index: 2;
+  height: 48px;
+  border-bottom: 1px solid #f2f2f2;
+  box-shadow: 0 0 5px gray;
+}
+header > h1 {
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Shrikhand", "Sans serif";
+}
+.header-back {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+}
+.header-back > i {
+  color: #353535;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #353535;
+  color: #fff;
+  height: 138px;
+  padding: 25px 30px;
+  padding-bottom: 35px;
+}
+.logo {
+  display: flex;
+  padding-bottom: 15px;
+}
+.logo > img {
+  height: 17px;
+}
+.footer-with-icon {
+  display: flex;
+}
+.footer-with-icon > p {
+  margin-left: 10px;
+}
+.footer-icon {
+  font-size: 13px;
+}
+.footer-icon2 {
+  font-size: 11px;
+}
+
+/* COEUR */
+.coeur {
+  position: relative;
+  font-size: 21px;
+  cursor: pointer;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+.coeur2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.2s ease-in;
+}
+.coeur:hover .coeur2 {
+  transform: scale(1);
+  opacity: 1;
+  -webkit-text-stroke: initial;
+}
