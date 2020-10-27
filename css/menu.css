@@ -19,6 +19,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 900px;
+  margin: auto;
   padding: 0 25px 15px 10px;
 }
 .general-titre > span {
@@ -36,6 +38,8 @@
   padding: 15px 0;
   display: flex;
   flex-direction: column;
+  max-width: 900px;
+  margin: auto;
   animation: 1.5s apparition;
 }
 .cat-menu > h2 {
@@ -212,5 +216,19 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 900px) {
+  .presentation {
+    height: 700px;
+  }
+  .general-titre {
+    max-width: ;
+  }
+  .s-menu {
+    border-radius: 0;
   }
 }
