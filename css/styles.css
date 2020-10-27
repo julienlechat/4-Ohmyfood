@@ -25,7 +25,7 @@
   padding-bottom: 58px;
   text-align: center;
 }
-.presentation > h1 {
+.presentation > h2 {
   font-size: 24px;
   margin: auto 26px;
   line-height: 1.19;
@@ -119,7 +119,7 @@
   background-color: #f2f2f2;
   padding: 53px 20px;
 }
-.s-restaurants > h1 {
+.s-restaurants > h2 {
   margin-bottom: 22px;
 }
 .restaurants-list {
@@ -292,8 +292,8 @@
   .restaurant {
     margin: 8px;
   }
-  .s-fonctionnement > h1,
-  .s-restaurants > h1 {
+  .s-fonctionnement > h2,
+  .s-restaurants > h2 {
     margin-left: 50px;
   }
 }
