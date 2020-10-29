@@ -101,6 +101,7 @@ footer {
   header {
     margin: auto;
     box-shadow: initial;
+    border-bottom: initial;
   }
   footer {
     margin: auto;
