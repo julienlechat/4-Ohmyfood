@@ -194,10 +194,14 @@
 /* LOADING */
 .loading-spinner {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: 3s HideAfterDelay forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: HideAfterDelay 3s forwards;
   visibility: visible;
 }
 .sk-chase {
