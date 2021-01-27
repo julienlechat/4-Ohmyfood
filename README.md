@@ -11,6 +11,6 @@ This project is a simple mobile design for a restaurant website.
 </div><br />
 
 
-## Test link
+## Test
 
-- [Go here](https://julienlechat.github.io/ohmyfood-food-site-mobile/index.html)
+- [test available here](https://julienlechat.github.io/ohmyfood-food-site-mobile/index.html)
