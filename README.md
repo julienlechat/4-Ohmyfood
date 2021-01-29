@@ -15,8 +15,8 @@ This project is a simple mobile design for a restaurant website.
 Here are some animations present on the project
 
 ![Example1](https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/ohmyfood-gif-1.gif?raw=true)<br>
-![Example2](https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/ohmyfood-gif-2.gif?raw=true)<br>
 ![Example3](https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/ohmyfood-gif-3.gif?raw=true)<br>
+![Example2](https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/ohmyfood-gif-2.gif?raw=true)<br>
 
 
 
