@@ -11,17 +11,12 @@ It contains some animations & transitions in css.
     <img src="https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/plats.png?raw=true" height="600px"</img>
 </div><br />
 
-## Transitions
-
-Example of transitions
-
-![Example3](https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/ohmyfood-gif-3.gif?raw=true)<br>
-
 ## Animations
 
-Here are some animations present on the project
+Here are some examples of animations and transitions in css
 
 ![Example1](https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/ohmyfood-gif-1.gif?raw=true)<br>
+![Example3](https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/ohmyfood-gif-3.gif?raw=true)<br>
 ![Example2](https://github.com/julienlechat/ohmyfood-food-site-mobile/blob/main/screenshots/ohmyfood-gif-2.gif?raw=true)<br>
 
 
